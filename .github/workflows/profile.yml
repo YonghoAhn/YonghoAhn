@@ -1,11 +1,11 @@
-name: profile
+name: CI publish
  
 on:
   push:
     branches:
       - master
   schedule:
-    - cron: '60 */1 * * *'
+    - cron: '30 */1 * * *'
 
 jobs:
   publish:
@@ -18,15 +18,16 @@ jobs:
         fetch-depth: 0
 
     - name: Generate README.md
-      uses: actions-js/profile-readme@v1
+      uses: actions-js/profile-readme@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         username: YonghoAhn
         template: "TEMPLATE.md"
+
       
     - name: Commit & Push changes
       uses: actions-js/push@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         coauthor_email: nanhosoft@soongsil.ac.kr
-        coauthor_name: 안용호
+        coauthor_name: YonghoAhn
