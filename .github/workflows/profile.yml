@@ -18,7 +18,7 @@ jobs:
         fetch-depth: 0
 
     - name: Generate README.md
-      uses: actions-js/profile-readme@master
+      uses: actions-js/profile-readme@v1
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         username: YonghoAhn
