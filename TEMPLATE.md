@@ -7,6 +7,9 @@
 - Github status
 
   [![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=yonghoahn)](https://github.com/anuraghazra/github-readme-stats)
+- languages
+
+  [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=yonghoahn)](https://github.com/anuraghazra/github-readme-stats)
 
 ## My projects:
 
