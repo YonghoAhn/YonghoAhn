@@ -29,12 +29,12 @@
 ## My activity:
 
 ```
+❌ Closed PR #18 in 4skinSkywalker/anti-porn-hosts-file
 ⬆️ Pushed 1 commit to YonghoAhn/ElectronicObserver
 🗣 Commented on #273 in andanteyk/ElectronicObserver
 💪 Opened PR #273 in andanteyk/ElectronicObserver
 🍴 Forked YonghoAhn/FANZY_BLoC_Template from underpin-korea/FANZY_BLoC_Template
-🍴 Forked YonghoAhn/ElectronicObserver from andanteyk/ElectronicObserver
 ```
 
 ------------
-<p align="center">Last refresh: <b>Friday, October 2nd 2020, 1:39:44 am UTC</b></p>
+<p align="center">Last refresh: <b>Friday, October 2nd 2020, 2:33:24 am UTC</b></p>
