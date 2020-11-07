@@ -19,11 +19,11 @@
 ⭐️ 1 📦 YonghoAhn/anti-porn-hosts-file
 ⭐️ 1 📦 YonghoAhn/dccon_crawler
 ⭐️ 1 📦 YonghoAhn/ElectronicObserver
+⭐️ 1 📦 YonghoAhn/JavaFinalProject
+⭐️ 1 📦 YonghoAhn/LinearAlgebraAssignment
 ⭐️ 1 📦 YonghoAhn/Live2D_pre
 ⭐️ 1 📦 YonghoAhn/MyDiary
 ⭐️ 1 📦 YonghoAhn/ReVibr
-⭐️ 1 📦 YonghoAhn/SurviveRecipe
-⭐️ 1 📦 YonghoAhn/WindlockerClient
 ```
 
 ## My activity:
@@ -37,4 +37,4 @@
 ```
 
 ------------
-<p align="center">Last refresh: <b>Saturday, November 7th 2020, 4:36:49 am UTC</b></p>
+<p align="center">Last refresh: <b>Saturday, November 7th 2020, 5:33:39 am UTC</b></p>
