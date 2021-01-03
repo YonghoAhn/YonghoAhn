@@ -29,8 +29,8 @@
 ## My activity:
 
 ```
-❌ Closed PR #18 in 4skinSkywalker/anti-porn-hosts-file
+
 ```
 
 ------------
-<p align="center">Last refresh: <b>Sunday, January 3rd 2021, 1:54:15 am UTC</b></p>
+<p align="center">Last refresh: <b>Sunday, January 3rd 2021, 3:04:15 am UTC</b></p>
