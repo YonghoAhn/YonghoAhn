@@ -1,33 +1,63 @@
-name: CI publish
- 
+name: Update profile stats
+
 on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 3 * * *"
   push:
     branches:
       - master
-  schedule:
-    - cron: '120 */1 * * *'
+    paths:
+      - ".github/workflows/profile.yml"
+
+permissions:
+  contents: write
 
 jobs:
-  publish:
+  build:
     runs-on: ubuntu-latest
+
     steps:
-    - name: Checkout sources
-      uses: actions/checkout@v2
-      with:
-        persist-credentials: false
-        fetch-depth: 0
+      - name: Checkout
+        uses: actions/checkout@v6
 
-    - name: Generate README.md
-      uses: actions-js/profile-readme@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        username: YonghoAhn
-        template: "TEMPLATE.md"
+      - name: Generate stats (light)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&include_all_commits=true&hide_border=true&theme=default
+          path: profile/stats-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
 
-      
-    - name: Commit & Push changes
-      uses: actions-js/push@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        coauthor_email: nanhosoft@soongsil.ac.kr
-        coauthor_name: YonghoAhn
+      - name: Generate stats (dark)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&include_all_commits=true&hide_border=true&theme=github_dark
+          path: profile/stats-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate top languages (light)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=8&hide_border=true&theme=default
+          path: profile/top-langs-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate top languages (dark)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=8&hide_border=true&theme=github_dark
+          path: profile/top-langs-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/*.svg
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: update profile stats"
+          git push
