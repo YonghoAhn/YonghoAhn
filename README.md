@@ -1,36 +1,41 @@
-# YonghoAhn
-- I am a sophomore at Soongsil University, School of Software.
-- C# WinForms & Java/Kotlin Android developer.
+# Yongho Ahn
 
-- How to reach me
-  - [Facebook profile](https://www.facebook.com/misakamoe)
-- Github status
+AI Software Engineering undergraduate at Soongsil University.
 
-  [![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=yonghoahn)](https://github.com/anuraghazra/github-readme-stats)
-- languages
+I build **on-device AI, edge systems, Android applications, and embedded/ML prototypes**.  
+My main interests are efficient AI deployment, real-time intelligent systems, and software that connects models to actual devices.
 
-  [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=yonghoahn)](https://github.com/anuraghazra/github-readme-stats)
+## Areas of interest
 
-## My projects:
+- On-device & Edge AI
+- Android / Kotlin / Java
+- PyTorch / ONNX
+- Embedded Systems / FPGA / AI Accelerators
+- ROS 2 / Robotics
+- Real-time ML systems
 
-```
-⭐️ 3 📦 YonghoAhn/Animation_Parse
-⭐️ 2 📦 YonghoAhn/anti-porn-hosts-file
-⭐️ 2 📦 YonghoAhn/DataStructureAssignment
-⭐️ 2 📦 YonghoAhn/LinearAlgebraAssignment
-⭐️ 1 📦 YonghoAhn/AnA_list
-⭐️ 1 📦 YonghoAhn/dccon_crawler
-⭐️ 1 📦 YonghoAhn/ElectronicObserver
-⭐️ 1 📦 YonghoAhn/JavaFinalProject
-⭐️ 1 📦 YonghoAhn/Live2D_pre
-⭐️ 1 📦 YonghoAhn/MyDiary
-```
+## Selected work
 
-## My activity:
+- **Adaptive parametric EQ / audio ML** — real-time room-response compensation and tonal-shape tracking
+- **On-device anti-scam AI** — speech/context understanding and spoofed-voice detection on Android
+- **Edge AI systems** — embedded inference, robotics, and accelerator-oriented deployment
+- **Android applications** — mobile development experience since 2013
+- **Game / simulation prototypes** — Godot and Unity projects alongside systems work
 
-```
+## GitHub stats
 
-```
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./profile/stats-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./profile/stats-light.svg">
+  <img alt="Yongho Ahn's GitHub stats" src="./profile/stats-light.svg">
+</picture>
 
-------------
-<p align="center">Last refresh: <b>Sunday, August 1st 2021, 4:59:19 pm UTC</b></p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./profile/top-langs-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./profile/top-langs-light.svg">
+  <img alt="Top languages" src="./profile/top-langs-light.svg">
+</picture>
+
+---
+
+Currently focused on **efficient on-device inference, embedded AI, and real-world ML systems**.
